@@ -1,0 +1,14 @@
+{
+  "name": "homeowner",
+  "version": "1.0.0",
+  "description": "Finals project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
