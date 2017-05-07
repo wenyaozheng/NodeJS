@@ -21,3 +21,7 @@ con.end(function(err) {
   // Ensures all previously enqueued queries are still
   // before sending a COM_QUIT packet to the MySQL server.
 });
+
+var sendRequest = function(){
+	
+}
