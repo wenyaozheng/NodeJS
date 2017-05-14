@@ -50,8 +50,9 @@ connection.connect(function(err){
 
 app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use(express.static(__dirname + '/view'));
+var name="asdasd";
 router.get("/",function(req,res){
-    res.sendFile(__dirname + "/views/index.html");
+    res.sendFile(__dirname + "/views/index.html", {name:name});
 });
 
 router.get("/about",function(req,res){
