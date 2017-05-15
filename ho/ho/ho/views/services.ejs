@@ -1,4 +1,4 @@
-<%- include('./layout')%>
+<%- extend('./layout') %>
     <!-- Temporary navbar container fix -->
     <style>
         .navbar-toggler {
@@ -28,13 +28,13 @@
     </ol>
 
     <!-- Image Header -->
-    <img class="img-fluid rounded mb-4" src="../public/images/service.jpg" alt="">
+    <img class="img-fluid rounded mb-4" src="images/service.jpg" alt="">
 
     <!-- Marketing Icons Section -->
     <div class="row">
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
-                <h4 class="card-header"><%= services.name() %>></h4>
+                <h4 class="card-header"></h4>
                 <div class="card-block">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>

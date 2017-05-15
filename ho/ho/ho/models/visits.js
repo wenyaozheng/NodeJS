@@ -1,9 +1,5 @@
 var db = require('../db');
-var index = require('./routes/index');
-var appointments = require('./routes/appointments');
-var services = require('./routes/services');
-var stylist = require('./routes/stylist');
-var about = require('./routes/about');
+
 /**
  * Gets all invoice entries
  * @param done callback
