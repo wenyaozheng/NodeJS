@@ -17,11 +17,9 @@
                                 <div class="form-group">
                                     <label class="control-label" for="date">Stylist</label>
                                     <select class="form-control input-md" data-live-search="true">
-                                        <option >Joshua Laban</option>
-                                        <option >Jenmar Gagelonia</option>
-                                        <option >Karl Bobadilla</option>
-                                        <option >Mary Anne Zheng</option>
-                                        <option >Daiben Sanchez</option>
+										<% print.forEach(function (service_provider) { %>
+											<option><%= service_provider.first_name + service_provider.last_name %></option>
+										<% }) %>
                                     </select>
                                 </div>
                             </div>
@@ -29,9 +27,9 @@
                                 <div class="form-group">
                                     <label class="control-label" for="date">Service</label>
                                     <select class="form-control input-md" data-live-search="true">
-                                        <option>Hair Rebond</option>
-                                        <option>Haircut</option>
-                                        <option>Manicure</option>
+									<% print.forEach(function (service) { %>
+										<option><%= services.name %></option>
+									<% })
                                     </select>
                                 </div>
                             </div>

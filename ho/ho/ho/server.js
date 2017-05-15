@@ -45,12 +45,31 @@ var transactions = require('./routes/transactions');
 var visits = require('./routes/visits');
 
 app.use('/', index);
-app.use('/about', about);
-app.use('/appointments', appointments);
-app.use('/services', services);
-app.use('/stylist', stylist);
-app.use('/transactions', transactions);
-app.use('/visits', visits);
+// app.use('/about', about);
+// app.use('/appointments', appointments);
+// app.use('/services', services);
+// app.use('/stylist', stylist);
+// app.use('/transactions', transactions);
+// app.use('/visits', visits);
+
+app.use('/about', function(req, res){
+    res.render('about');
+});
+app.use('/appointments', function(req, res){
+    res.render('appointments');
+});
+app.use('/services', function(req, res){
+    res.render('services');
+});
+app.use('/stylist', function(req, res){
+    res.render('stylist');
+});
+app.use('/transactions', function(req, res){
+    res.render('transactions');
+});
+app.use('/visits', function(req, res){
+    res.render('visits');
+});
 
 
 app.set('port', (process.env.PORT || 3000));
