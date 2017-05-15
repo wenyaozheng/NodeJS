@@ -7,7 +7,7 @@ var router = express.Router();
 //     res.render('stylist', { title: 'Stylist' });
 // });
 router.get('/list', function (req, res, next) {
-    customer.getAll(function (err, results) {
+    stylist.getAll(function (err, results) {
         if (err) console.log(err);
         res.render('stylist/list', {
             'results': results

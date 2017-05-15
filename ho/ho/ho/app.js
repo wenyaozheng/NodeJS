@@ -16,7 +16,6 @@ var session = require('express-session');
 
 var app = express();
 
-const ejsLint = require('ejs-lint');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
