@@ -1,4 +1,4 @@
-<% extends ('./layout') %>
+<%- include('./layout')%>
     <!-- Temporary navbar container fix -->
     <style>
         .navbar-toggler {
@@ -34,7 +34,7 @@
     <div class="row">
         <div class="col-lg-4 mb-4">
             <div class="card h-100">
-                <h4 class="card-header"><%= service.name() %>></h4>
+                <h4 class="card-header"><%= services.name() %>></h4>
                 <div class="card-block">
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
                 </div>

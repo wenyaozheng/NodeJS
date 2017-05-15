@@ -1,6 +1,10 @@
 var express = require('express');
-var services = require('../models/services');
 var router = express.Router();
+var index = require('../routes/index');
+var appointments = require('../routes/appointments');
+var services = require('../routes/services');
+var stylist = require('../routes/stylist');
+var about = require('../routes/about');
 var formatCurrency = require('format-currency');
 var opts = {format: '%s%v', symbol: '₱'};
 
