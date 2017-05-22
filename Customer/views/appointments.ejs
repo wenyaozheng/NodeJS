@@ -1,0 +1,60 @@
+<%- extend('./layout') %>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well-block">
+                    <div class="well-title">
+                        <h2>Questions? Book an Appointment</h2>
+
+                    </div>
+
+                        <!-- Form start -->
+
+
+                            <!-- Select Basic -->
+                            <!-- Button -->
+
+                    <table class="col-md-12 table table-bordered">
+                        <tr>
+                            <th>Service Provider</th>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Remarks</th>
+
+                        </tr>
+
+                        <% results.forEach(function(result){ %>
+
+                        <tr><td><%= result.first_name %> <%= result.last_name %></td>
+
+                            <td><select id="time" name="time" class="form-control">
+                                    <% services.forEach(function(service){ %>
+                                        <% if(service.spid==result.id){%>
+                                            <option><%= service.name %></option>
+                                        <% };%>
+                                    <% }); %>
+                                </select></td>
+                            <td><%= result.description%></td>
+                            <td><%= result.remarks %></td>
+                            <td><form action="/makeAppointment" method="post">
+                                    <input type="hidden" name="id" value="<%= result.id %>">
+                                    <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
+                                </form>
+                                </td>
+                        </tr>
+                        <% }); %>
+                    </table>
+                    <!-- form end -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- /.container -->
+
+

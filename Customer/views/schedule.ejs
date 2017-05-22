@@ -1,0 +1,52 @@
+<%- extend ('./layout')%>
+
+<!-- Temporary navbar container fix -->
+<style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    footer{
+        margin-top: 20px;
+    }
+    .affix {
+        top: 20px;
+    }
+</style>
+
+
+
+<!-- Page Content -->
+<br/>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
+
+            <h2>Visits</h2>
+            <form class="col-md-6" action="/addVisit" method="post">
+                Preferred Date: <input type="date" name="date" class="form-control">
+                Preferred Time: <input type="time" name="time" class="form-control">
+                Description: <input type="text" name="description" class="form-control">
+                Service: <select id="time" name="service" class="form-control">
+                    <% services.forEach(function(service){ %>
+                    <% if(service.spid==sp){%>
+                    <option value="<%= service.id%>"><%= service.name %></option>
+                    <% };%>
+                    <% }); %>
+                </select>
+                <input type="hidden" name="id" value="<%= sp %>">
+                <input type="hidden" name="reqid" value="<%= requestid %>">
+                <button id="singlebutton" name="singlebutton" class="btn btn-default">Add Visit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>

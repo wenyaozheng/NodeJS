@@ -1,0 +1,60 @@
+<%- extend('./layout') %>
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Stylists <small></small></h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.html">Salonpas</a>
+        </li>
+        <li class="breadcrumb-item active">Stylists</li>
+    </ol>
+
+    <!-- Project One -->
+    <div class="row">
+        <table class="col-md-12 table table-hover table-condensed">
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Contact Number</th>
+                <th>E-mail</th>
+                <th>Description</th>
+                <th>Remarks</th>
+
+
+            </tr>
+            <% sps.forEach(function(sps){ %>
+            <tr>
+                <td><%= sps.last_name %></td>
+                <td><%= sps.first_name%></td>
+                <td><%= sps.contact_number %></td>
+                <td><%= sps.email %></td>
+                <td><%= sps.description %></td>
+                <td><%= sps.remarks %></td>
+                <td><form action="/makeAppointment" method="post">
+                        <input type="hidden" name="id" value="<%= sps.id %>">
+                        <button id="singlebutton" name="singlebutton" class="btn btn-default">Make An Appointment</button>
+                    </form>
+                </td>
+            </tr>
+
+            <% }); %>
+        </table>
+
+</div>
+<!-- /.container -->

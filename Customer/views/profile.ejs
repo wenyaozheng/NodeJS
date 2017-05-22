@@ -1,0 +1,111 @@
+<%- extend('./layout')%>
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+
+<!-- Page Content -->
+<div class="container">
+    <% cust.forEach(function(cust){ %>
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3"> <%= cust.last_name %> <small><%= cust.first_name%></small></h1>
+    <% }); %>
+
+    <!-- Intro Content -->
+    <div class="row">
+        <div class="col-lg-6">
+            <img class="img-fluid rounded mb-4" src="images/1.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <table class="col-md-12 table table-hover table-bordered">
+                    <!--<tr>-->
+                        <!--<th>Last Name</th>-->
+                        <!--<th>First Name</th>-->
+                        <!--<th>Address</th>-->
+                        <!--<th>E-mail</th>-->
+
+                    <!--</tr>-->
+                    <% cust.forEach(function(cust){ %>
+
+                        <td>Last Name: <%= cust.last_name %></td>
+                        <td>First Name: <%= cust.first_name%></td>
+                        <td>Address: <%= cust.address %></td>
+                        <td>E-mail: <%= cust.email %></td>
+
+                    <% }); %>
+                </table>
+    </div>
+        </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <h2>Transactions:</h2>
+
+    <div class="row">
+        <table class="col-md-12 table table-hover table-bordered">
+            <tr>
+                <th>Status</th>
+                <th>Date Started</th>
+                <th>Date Finished</th>
+                <th>Amount</th>
+                <th>Action</th>
+
+            </tr>
+            <% trans.forEach(function(trans){ %>
+            <tr>
+                <td><%= trans.status %></td>
+                <td><%= trans.date_started%></td>
+                <td><%= trans.date_finished %></td>
+                <td><%= trans.amount %></td>
+                <%if(trans.status=="ongoing"){%>
+                <td><form action="/markDone" method="post">
+                        <input type="hidden" name="accept" value="<%= trans.id%>">
+                        <button class="btn btn-success">Done</button>
+                    </form>
+                    <form action="/cancel" method="post">
+                        <input type="hidden" name="cancel" value="<%= trans.id%>">
+                        <button class="btn btn-danger">Cancel</button>
+                    </form>
+                </td>
+                <%};%>
+            </tr>
+
+            <% }); %>
+        </table>
+
+        <h2>Requests:</h2>
+        <table class="col-md-12 table table-hover table-bordered">
+            <tr>
+                <th>Status</th>
+                <th>Date Requested</th>
+                <th>Time</th>
+
+            </tr>
+            <% requests.forEach(function(request){ %>
+            <tr>
+                <td><%= request.status %></td>
+                <td><%= request.date_requested%></td>
+                <td><%= request.time %></td>
+            </tr>
+
+            <% }); %>
+        </table>
+        <!--<div class="col-lg-12 mb-4">-->
+			<!--<table class = "table">-->
+				<!--<tr><th>Date requested</th><th>Date accepted</th><th>Service</th><th>Service Provider</th><th>Time</th></tr>-->
+				<!--<tr><td>2017-8-15</td><td></td><td>asdasdasd</td><td>Joshua Laban</td><td>7:00 PM</td></tr>-->
+			<!--</table>-->
+        <!--</div>-->
+    </div>
+    <!-- /.row -->
+
+</div>

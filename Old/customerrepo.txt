@@ -1,0 +1,176 @@
+commit 860fca142f50f68362bd64b9e9e7dcd47fdd077d
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 12:41:50 2017 +0800
+
+    Layouts
+
+commit 5af7bbe289d22332f26493ab14d88db26449f0f3
+Merge: 847fd15 1cc078a
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 11:42:45 2017 +0800
+
+    Merge branch 'master' of https://github.com/wenyaozheng/NodeJS
+
+commit 847fd152c456dd0a1529b628d33ec230f894ae79
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 11:40:45 2017 +0800
+
+    commits
+
+commit 1cc078ac1cba84a18aa60e36ec4743c4a4443a53
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Mon May 15 11:40:16 2017 +0800
+
+    About
+
+commit 3026552154d73eefac3f8a97227f93f3f8e93762
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Mon May 15 11:39:50 2017 +0800
+
+    About
+
+commit 25f9ec04d4a15d1fd7e1b0f22f5766870b48f2d1
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 08:55:47 2017 +0800
+
+    render
+
+commit 9ad2c9344decd0732a4092d61e5d7a771c8d5a6d
+Merge: 8386d81 0b97949
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 07:52:30 2017 +0800
+
+    Ejs design
+
+commit 8386d818498a78b1d7bb2e2fce0cd04bd576da43
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Mon May 15 07:50:56 2017 +0800
+
+    Ejs design
+
+commit 0b979498475a432d2991c9a605012d33c25f615d
+Author: arvince <alcaidearvince@gmail.com>
+Date:   Mon May 15 01:36:21 2017 +0800
+
+    notification
+
+commit 5e26e41f6b0dd9c21af928541956db6aa6f7acaa
+Author: joshuaNL360 <joshua360notarte@gmail.com>
+Date:   Sun May 14 18:47:29 2017 +0800
+
+    fixed image links and moved edited view pages to main view pages
+
+commit 8ccce8bba40672960f9194ff610fb17f8ab5b0b4
+Author: jen0123 <2152195@slu.edu.ph>
+Date:   Sun May 14 17:58:18 2017 +0800
+
+    edited appointment.html
+
+commit b5bfea47914b9b4de065fe4d55ea64de9f5ca325
+Author: jen0123 <2152195@slu.edu.ph>
+Date:   Sun May 14 17:28:34 2017 +0800
+
+    edited services.html
+
+commit e55c8d7ee9d264354ea11f400bd10fb6bfeebdbe
+Author: jen0123 <2152195@slu.edu.ph>
+Date:   Sun May 14 15:41:41 2017 +0800
+
+    edited content
+
+commit 64d7ad8b327e408d8ec198dc56f00aabd3fa8c0b
+Author: jen0123 <2152195@slu.edu.ph>
+Date:   Sun May 14 15:08:30 2017 +0800
+
+    edited content
+
+commit 8f9180855f06367e49c96a94da874c8dd5031ab3
+Author: kylefpadlan <kylef.padlan@gmail.com>
+Date:   Sun May 14 12:45:47 2017 +0800
+
+    Added content to about and stylist pages
+
+commit 795daf361c45fd0a29586779a2fa3c708bb5df81
+Author: kylefpadlan <kylef.padlan@gmail.com>
+Date:   Sun May 14 12:17:43 2017 +0800
+
+    Fixed dead links on the website
+
+commit 4e69ca3f0c813e6fc0e265a39ef706b183d6ac70
+Author: joshuaNL360 <joshua360notarte@gmail.com>
+Date:   Sun May 14 10:41:27 2017 +0800
+
+    fixed link
+
+commit 4b9c511d953a02633126d8f9a6a388d3126827fd
+Author: joshuaNL360 <joshua360notarte@gmail.com>
+Date:   Sun May 14 10:31:25 2017 +0800
+
+    changed ui
+
+commit db57b194761135e91b9ccea39ee67712f6a21669
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Wed May 10 14:58:16 2017 +0800
+
+    Updated design and deleted old files
+
+commit 033915148f78c4c8147c6af70c36184090ec1291
+Author: joshuaNL360 <joshua360notarte@gmail.com>
+Date:   Tue May 9 20:57:17 2017 +0800
+
+    changed title of page
+
+commit 8a0bafa7ab8dcfa7317d4a0e7120729c467b6c9b
+Author: joshuaNL360 <joshua360notarte@gmail.com>
+Date:   Tue May 9 20:55:37 2017 +0800
+
+    added initial design
+
+commit 0e7c1fff7d6911435ef290d76c9524c85e64f09f
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Sun May 7 22:10:46 2017 +0800
+
+    Adding app.js
+
+commit 00705aa2b005eb2b426cf1dc5ff8bc2dc1227763
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Sun May 7 21:42:03 2017 +0800
+
+    Recommiting
+
+commit 98d9c4c94918f89a0c099e8556e260b4204859a9
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Sun May 7 21:41:03 2017 +0800
+
+    Recommiting
+
+commit 54c4f60d02171b44dc54f9cf52b20d858d6f4ea9
+Author: Daiben Angelo Sanchez <daibenangelosanchez@gmail.com>
+Date:   Sun May 7 21:32:44 2017 +0800
+
+    Adding last week progress
+
+commit 681bb82dacf36a799eadaab38f607730b11a1090
+Merge: 88ac0c2 9e6a4b1
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Tue May 2 20:22:26 2017 +0800
+
+    Merge branch 'master' of https://github.com/wenyaozheng/NodeJS
+
+commit 9e6a4b1771a7503ae75657d8c7d06a3642366625
+Author: kylefpadlan <kylef.padlan@gmail.com>
+Date:   Tue May 2 14:26:21 2017 +0800
+
+    Added temporary website for customers
+
+commit 88ac0c2c5ce4385eaf4c798c6c9054413902aa25
+Author: Anne Zheng <2150065@slu.edu.ph>
+Date:   Tue May 2 14:21:10 2017 +0800
+
+    Initial webpage
+
+commit 9da1655bad88a9a86f70fc8ac991b0770e010fb1
+Author: Anne <2150065@slu.edu.ph>
+Date:   Tue May 2 14:08:21 2017 +0800
+
+    Initial commit

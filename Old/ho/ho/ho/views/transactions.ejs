@@ -1,0 +1,53 @@
+<%- extend ('./layout')%>
+
+<!-- Temporary navbar container fix -->
+<style>
+    .navbar-toggler {
+        z-index: 1;
+    }
+
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    footer{
+        margin-top: 20px;
+    }
+    .affix {
+        top: 20px;
+    }
+</style>
+
+
+
+<!-- Page Content -->
+<br/>
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+
+
+            <h2>Transactions</h2>
+
+            <input class="pull-right" style="margin-bottom: 10px" type="text" id="search" onkeyup="myFunction()" placeholder="Type to search">
+
+            <table id="table" class="table table-striped">
+                <thead>
+                <tr class="header">
+                    <th onclick="sortTable(0)">Customer Name</th>
+                    <th onclick="sortTable(1)">Service</th>
+                    <th onclick="sortTable(2)">Date Started</th>
+                    <th onclick="sortTable(3)">Date Finished</th>
+                    <th onclick="sortTable(4)">Status</th>
+                    <th></th>
+                </tr>
+                </thead>
+\
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-md-1"></div>

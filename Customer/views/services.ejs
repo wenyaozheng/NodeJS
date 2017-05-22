@@ -1,0 +1,87 @@
+<%- extend('./layout') %>
+    <!-- Temporary navbar container fix -->
+    <style>
+        .navbar-toggler {
+            z-index: 1;
+        }
+
+        @media (max-width: 576px) {
+            nav > .container {
+                width: 100%;
+            }
+        }
+    </style>
+
+
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Services</h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="index.ejs">Salonpas</a>
+        </li>
+        <li class="breadcrumb-item active">Services</li>
+    </ol>
+
+    <!-- Image Header -->
+    <img class="img-fluid rounded mb-4" src="images/service.jpg" alt="">
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <table class="col-md-12 table table-hover table-bordered">
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+
+            </tr>
+            <% services.forEach(function(services){ %>
+            <tr>
+                        <td><%= services.name %></td>
+                        <td><%= services.price%></td>
+                        <td><%= services.category %></td>
+                        <td><%= services.description %></td>
+            </tr>
+
+            <% }); %>
+        </table>
+        <!--<div class="col-lg-4 mb-4">-->
+            <!--<div class="card h-100">-->
+                <!--<h4 class="card-header">Haircut and Hair Styling</h4>-->
+                <!--<div class="card-block">-->
+                    <!--<p class="card-text">From haircuts to hair colors, small changes to reinventions,our hair stylists will work with you to design the perfect, customized-->
+                        <!--style. Our services include a variety of haircuts, hair styles, and hair treatments for men and women.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-lg-4 mb-4">-->
+            <!--<div class="card h-100">-->
+                <!--<h4 class="card-header">Manicure and Pedicure</h4>-->
+                <!--<div class="card-block">-->
+                    <!--<p class="card-text">Using products that are organic and cruelty-free, we clean and shape nails to the ultimate perfection. Enjoy our unforgettable-->
+                        <!--world class manicure and pedicure services with a soothing warm neck pillow.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-lg-4 mb-4">-->
+            <!--<div class="card h-100">-->
+                <!--<h4 class="card-header">Facial and Massage</h4>-->
+                <!--<div class="card-block">-->
+                    <!--<p class="card-text">With a minimum time of 60 minutes, we can offer an invigorating body massage or full service facial built on fundamentals of good-->
+                        <!--skin care. Enjoy our services with the scent of aroma and the sound of soothing calm music.</p>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!-- /.row -->
+
+
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
